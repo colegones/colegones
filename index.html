@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>La vuelta a España</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+
+  <!-- Leaflet (Mapa) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>La vuelta a España</h1>
+      <p>Los colegones dan la vuelta a España en autocaravana sin móviles!</p>
+    </div>
+  </header>
+
+  <nav class="menu">
+    <a href="#intro">Intro</a>
+    <a href="#videos">Capítulos</a>
+    <a href="#mapa">Ruta</a>
+    <a href="#preguntas">Preguntas</a>
+    <a href="#donaciones">Apóyanos</a>
+  </nav>
+
+  <main>
+
+    <section id="intro" class="seccion-video">
+      <video autoplay muted loop playsinline>
+        <source src="Resources/videos/intro.mp4" type="video/mp4" />
+        Tu navegador no soporta vídeo.
+      </video>
+      <div class="intro-texto">
+        <h2>¿Quiénes somos?</h2>
+        <p>Somos dos amigos dando la vuelta a España sin móviles ni tecnología. Cada día, grabamos lo que vivimos y lo compartimos con vosotros.</p>
+      </div>
+    </section>
+
+    <section id="videos" class="seccion-grande">
+      <h2>Capítulos</h2>
+      <div id="video-lista" class="grid-videos">
+        <!-- Se cargarán los vídeos aquí -->
+      </div>
+    </section>
+
+    <section id="mapa" class="seccion-mapa">
+      <h2>Nuestra Ruta</h2>
+      <div id="map"></div>
+    </section>
+
+    <section id="preguntas" class="seccion-preguntas">
+      <h2>Haznos una pregunta</h2>
+      <form id="form-pregunta">
+        <input type="text" name="nombre" placeholder="Tu nombre" required />
+        <textarea name="pregunta" placeholder="Tu pregunta..." required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <div id="lista-preguntas"></div>
+    </section>
+
+    <section id="donaciones" class="seccion-donaciones">
+      <h2>Apóyanos</h2>
+      <p>Si te gusta lo que hacemos, puedes invitarnos a un café o a una gasolina. ¡Gracias por estar ahí!</p>
+      <a href="https://paypal.me/colegones" class="boton-donar" target="_blank">Donar con PayPal</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 La vuelta a España — creado con ❤️</p>
+  </footer>
+
+</body>
+</html>
