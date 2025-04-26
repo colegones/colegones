@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const videos = [
     { title: "Destino 1: Tenerife", url: "https://www.youtube.com/watch?v=athp282l2BA" },
-    { title: "Destono 2: Por la costa", url: "https://www.youtube.com/embed/VID2" }
+    { title: "Destino 2: Por la costa", url: "https://www.youtube.com/embed/VID2" }
   ];
 
   const videoContainer = document.getElementById("video-lista");
