@@ -1,9 +1,13 @@
 :root {
-  --bg-light: #fdfdfd;
-  --bg-dark: #1e1e1e;
-  --accent: #ff6f61;
+  --bg-light: #e7e7e7;
+  --bg-dark: black;
+  --accent: linear-gradient(135deg, #ff0000, #9e0000);
   --text: #222;
   --text-light: #fff;
+}
+
+html {
+  scroll-padding-top: 100px; /* Ajusta aquest valor segons l’alçada del teu menú fix */
 }
 
 * {
@@ -75,6 +79,22 @@ body {
 }
 
 /* SECCIONES */
+
+.seccion-capitulos {
+  padding: rem 2rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  max-width: 1000px;
+  margin: 4rem auto;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#videos {
+  margin-top: 30px;
+}
+
 .seccion-video video {
   width: 100%;
   height: auto;
@@ -202,7 +222,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #ff8566;
+  background-color: #8f0000;
   transform: scale(1.05);
 }
 
@@ -215,7 +235,7 @@ form button:hover {
 }
 
 #lista-preguntas p {
-  background-color: #f7f7f7;
+  background-color: #dfdfdf;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
@@ -240,6 +260,7 @@ form button:hover {
 }
 
 
+
 /* DONACIONES */
 .seccion-donaciones {
   background: var(--bg-dark);
@@ -257,6 +278,11 @@ form button:hover {
   text-decoration: none;
   font-weight: bold;
   margin-top: 1rem;
+}
+
+.boton-donar:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* FOOTER */

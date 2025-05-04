@@ -13,9 +13,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // === 📼 LISTA DE VIDEOS ===
   const videos = [
-    { title: "Destino 1: Tarragona", url: "https://www.youtube.com/embed/VID1" },
-    { title: "Destino 2: Barcelona", url: "https://www.youtube.com/embed/VID2" },
-    { title: "Destino 3: Andorra", url: "https://www.youtube.com/embed/VID3" }
+    { title: "Destino 1: Madrid", url: "https://www.youtube.com/embed/VID1" },
+    { title: "Destino 2: Ávila", url: "https://www.youtube.com/embed/VID2" },
   ];
 
   const videoContainer = document.getElementById("video-lista");

@@ -10,6 +10,8 @@
   <!-- Leaflet (Mapa) -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+  <script src="https://www.paypal.com/bizcomponents/sdk?components=hosted-buttons&client-id=sb"></script>
 </head>
 <body>
 
@@ -23,17 +25,19 @@
 
   <nav class="menu">
     <a href="#intro">Intro</a>
+    <a href="#quienes-somos">¿Quiénes somos?</a>
     <a href="#videos">Capítulos</a>
     <a href="#mapa">Ruta</a>
     <a href="#preguntas">Preguntas</a>
     <a href="#donaciones">Apóyanos</a>
+    <a href="#otra-serie">Mas Series!</a>
   </nav>
 
   <main>
 
-    <section id="intro" class="seccion-video">
+    <section id="quienes-somos" class="seccion-video">
       <video controls loop playsinline>
-        <source src="Resources/videos/intro.mp4" type="video/mp4" />
+        <source src="" type="video/mp4" />
         Tu navegador no soporta vídeo.
       </video>
       <div class="intro-texto">
@@ -79,25 +83,19 @@
             </div>
           </div>
         </div>        
-        
       </div>
+      <video controls loop playsinline>
+        <source src="Resources/videos/intro.mp4" type="video/mp4" />
+        Tu navegador no soporta vídeo.
+      </video>
     </section>
 
-    <section id="videos" class="seccion-grande">
+    <section id="videos" class="seccion-grande seccion-capitulos">
       <h2>Capítulos</h2>
       <div id="video-lista" class="grid-videos">
         <!-- Se cargarán los vídeos aquí -->
       </div>
       <h3> <br>📺 ¡Próximamente nuevos capítulos!</h3>
-    </section>
-
-    <section id="otraseries" class="seccion-grande">
-      <h2>¡Otra serie! Por Tenerife</h2>
-      <div class="video-extra">
-        <iframe src="https://www.youtube.com/embed/athp282l2BA" 
-                frameborder="0" 
-                allowfullscreen></iframe>
-      </div>
     </section>
 
     <section id="mapa" class="seccion-mapa">
@@ -120,9 +118,17 @@
     <section id="donaciones" class="seccion-donaciones">
       <h2>Apóyanos</h2>
       <p>Si te gusta lo que hacemos, puedes invitarnos a un café o a una gasolina. ¡Gracias por estar ahí!</p>
-      <a href="https://paypal.me/colegones" class="boton-donar" target="_blank">Donar con PayPal</a>
+      <a href="apoyanos.html" class="boton-donar" target="_blank">Apoyar</a>
     </section>
-
+    
+    <section id="otra-serie" class="seccion-grande">
+      <h2>¡Otra serie! Por Tenerife</h2>
+      <div class="video-extra">
+        <iframe src="https://www.youtube.com/embed/athp282l2BA" 
+                frameborder="0" 
+                allowfullscreen></iframe>
+      </div>
+    </section>
   </main>
 
   <footer>
